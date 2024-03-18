@@ -2,13 +2,13 @@
 
 // You must implement a solution with a linear runtime complexity and use only constant extra space.
 
- 
-
 // Example :
 
 // Input: nums = [2,2,1]
 // Output: 1
 
+
+// Note: By iterating through each element of the nums array and performing XOR operation with the current value of ans, the code effectively XORs all the elements together.
 
 var singleNumber = function(nums) {
     let ans=0
