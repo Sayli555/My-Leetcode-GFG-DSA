@@ -26,3 +26,29 @@ var twoSum = function(nums, target) {
      }
     }
  };
+
+
+//  or 
+var twoSum = function(nums, target) {
+
+    const numIndices = new Map();
+
+    // Iterate through the array
+    for (let i = 0; i < nums.length; i++) {
+        const num = nums[i];
+        // Calculate the complement needed to reach the target
+        const complement = target - num;
+        
+        // Check if the complement exists in the map
+        if (numIndices.has(complement)) {
+            // If complement exists, return the indices of the current number and its complement
+            return [numIndices.get(complement), i];
+        }
+        
+        // If complement doesn't exist, store the index of the current number in the map
+        numIndices.set(num, i);
+    }
+
+    // If no solution is found, return null or handle it according to your requirement
+    return null;
+};
