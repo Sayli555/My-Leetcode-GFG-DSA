@@ -31,24 +31,20 @@ var twoSum = function(nums, target) {
 //  or 
 var twoSum = function(nums, target) {
 
-    const numIndices = new Map();
-
-    // Iterate through the array
+    const numIndices ={}
     for (let i = 0; i < nums.length; i++) {
-        const num = nums[i];
-        // Calculate the complement needed to reach the target
-        const complement = target - num;
-        
-        // Check if the complement exists in the map
-        if (numIndices.has(complement)) {
-            // If complement exists, return the indices of the current number and its complement
-            return [numIndices.get(complement), i];
+        const findIndex = target - nums[i];
+        if (numIndices.hasOwnProperty(complement)) {
+            return [numIndices[findIndex], i];
         }
-        
-        // If complement doesn't exist, store the index of the current number in the map
-        numIndices.set(num, i);
+         numIndices[nums[i]]=i
     }
-
-    // If no solution is found, return null or handle it according to your requirement
     return null;
 };
+
+// Explaination:
+// findIndex => target-nums[i]  means (nums[i] + findIndex == target) 
+// -- const findIndex = target - nums[i] ==> nums[i] present in array , remamining value store in findIndex
+// -- we have to find findIndex this value in array 
+// -- if present then we have nums[i] and object present value , if we do sum then (sum === target)
+// -- if not then we store this num[i] value in object to check next time
