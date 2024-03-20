@@ -33,3 +33,12 @@ var rotate = function(nums, k) {
     end--
     }
     }
+
+
+    // Note:
+    // 1) rotate all array first (0 to arr.length-1)
+    //     -rotate all array means last element come first
+    // 2) then rotate only (0 to k-1) means inside rotation only
+    //     -rotate elements that rotate in first swap 
+    // 3) then rotate only (k to arr.length-1) inide rotation onlay
+    //     -rotate element => after second swap
