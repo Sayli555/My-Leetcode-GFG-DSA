@@ -14,7 +14,6 @@ class Solution
     //  return ans
      
   }
-
   //Function to sort the array using selection sort algorithm.
   selectionSort(arr,n){
    //code here
@@ -30,13 +29,12 @@ class Solution
            arr[minIndex]=arr[i]
            arr[i]=temp
        }
-      
    }
     return arr
-  }
-    
+  }   
 }
-
-
 // TC=> O(n^2)
 // SC=> O(1)  ==> use only one variable to store index value , it works constant, no any exstra space 
+// 1) in selection sort we store index form fisrt loop and second loop we comapre if any element is bigger than store index element
+// if yes then we swap it 
+// 2) we compare upto end element
