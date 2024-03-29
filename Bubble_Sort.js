@@ -24,5 +24,5 @@ class Solution
     
 }
 
-TC=> O(n^2) ==> we have iterate array 2 times 
-Sc=> o(1) ==> we are not using any exstra space
+// TC=> O(n^2) ==> we have iterate array 2 times 
+// Sc=> o(1) ==> we are not using any exstra space
