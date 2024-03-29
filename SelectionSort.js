@@ -36,3 +36,7 @@ class Solution
   }
     
 }
+
+
+// TC=> O(n^2)
+// SC=> O(1)  ==> use only one variable to store index value , it works constant, no any exstra space 
