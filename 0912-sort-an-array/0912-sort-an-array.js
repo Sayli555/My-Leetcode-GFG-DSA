@@ -53,3 +53,7 @@ function merge(arr,s,m,e){
     r++
   }
 }
+
+
+TC= O(nlog(n))
+SC= O(n)
