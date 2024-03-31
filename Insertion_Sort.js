@@ -9,11 +9,6 @@
 
 class Solution
 {
-  insert(arr,i){
-     // code here such that insertionSort() sorts arr[]
-     
-  }
-
    //Function to sort the array using insertion sort algorithm.
   insertionSort(arr,n){
    //code here
