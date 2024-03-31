@@ -1,1 +1,1 @@
-[![merge sort](/images/ms1.png "merge sort")]
+![Merge Sort!](/images/ms1.png "San Juan Mountains")
