@@ -1,1 +1,1 @@
-​
+​![Merge sort](/dryRun/ms1.jpg)
