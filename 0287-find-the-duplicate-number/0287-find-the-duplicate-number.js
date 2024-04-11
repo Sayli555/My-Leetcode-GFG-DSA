@@ -3,18 +3,14 @@
  * @return {number}
  */
 var findDuplicate = function(nums) {
-    let obj={}
+  let obj={}
     for(let i=0;i<nums.length;i++){
-        if(obj[nums[i]]==undefined){
-            obj[nums[i]]=1
-        }else{
-            obj[nums[i]]++
+        let currentNum=nums[i]
+        
+        if(obj[currentNum]!=undefined){
+                return currentNum
         }
-    }
-    for(let key in obj){
-        if(obj[key]>1){
-            return key
-        }
+        obj[currentNum]=1
     }
     return -1
 };
