@@ -9,15 +9,15 @@ var majorityElement = function(nums) {
             obj[nums[i]]=1
         }
         else{
-             obj[nums[i]]++
+            obj[nums[i]]++
         }
     }
     let max=0
-    let ans;
-    for(key in obj){
+    let ans=0
+    for(let key in obj){
         if(max<obj[key]){
             max=obj[key]
-           ans =key
+            ans=+key
         }
     }
     return ans
